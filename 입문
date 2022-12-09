@@ -1,2 +1,16 @@
 # programmers
 
+# 옹알이 (1)
+# (문자열 안에 특정문자찾기)
+
+def solution(babbling):
+  c = 0
+  for b in babbling:
+    for w in [ "aya", "ye", "woo", "ma" ]:
+      if w * 2 not in b:
+        b = b.replace(w, ' ') 
+    if len(b.strip()) == 0:
+        c += 1
+  return 
+  
+  
