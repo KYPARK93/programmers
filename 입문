@@ -1,6 +1,6 @@
 # programmers
 
-# 옹알이 (1)
+## 옹알이 (1)
 # (문자열 안에 특정문자찾기)
 
 def solution(babbling):
@@ -11,6 +11,42 @@ def solution(babbling):
         b = b.replace(w, ' ') 
     if len(b.strip()) == 0:
         c += 1
-  return 
+  return c
   
+  
+## 짝수의 합
+# (range를 이용하여 합 더하기)
+  
+def solution(n):
+    return sum(range(0,n+1,2))  
+  
+  
+## 중복된 숫자 개수
+# (array를 이용하여 중복된 값 찾기)
+
+def solution(array, n):
+    return array.count(n)
+  
+  
+## 머쓱이보다 키 큰 사람
+# (for if 문 사용하여 특정 값 찾아내기)
+
+def solution(array, height):
+    answer = 0
+    for i in array:
+        if i > height:
+            answer += 1
+    return answer
+    
+## 피자 나눠 먹기
+# (몫 구하기)
+
+def solution(n):
+    return (n-1)//7+1
+
+
+
+
+
+
   
